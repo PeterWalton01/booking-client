@@ -3,7 +3,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useState, useEffect } from "react";
 import { getTreatments } from "../api/treatments";
-import { useHistory } from "react-router-dom";
 import moment from "moment";
 import { addAppointment } from "../api/appointment";
 import { selectPhysio, setPhysio } from "../slices/physioSlice";
@@ -26,7 +25,6 @@ import { useDispatch, useSelector } from "react-redux";
 const AddAppointment = ({ appointment }) => {
   const dispatch = useDispatch();
   const currPhysio = useSelector(selectPhysio);
-  const history = useHistory();
   const [dateTime, setDateTime] = useState(new Date(appointment.end_datetime));
   const [treatments, setTreatments] = useState([]);
   const [currTreatment, setCurrTreatment] = useState({});
