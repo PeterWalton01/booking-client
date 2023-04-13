@@ -37,6 +37,8 @@ The application uses the following technologies:
 
 This is the client that accompanies the server application _Appointment Booking App (REST API)_. (This is also a repository on the GitHub sit). This application will be unresponsive without an instance of this REST API server. Details of how to configure this application to work with an instance of the API server are given below.
 
+Please note that this application is intended to run on an office intranet. No attempt has been made to make the application responsive to device size. Having said that, the application will be usable on a tablet running landscape orientation.
+
 #### Building the application
 
 To begin, this application must be cloned locally from the GitHub. In the project directory the following commands should then be run to build a development version of the application -
@@ -51,13 +53,6 @@ A production build can be produced by running
 ### Running with a corresponding REST API server
 
 To configure the application to run with a REST API server, complete the following steps:
-
-In the root of the project, create a .env file with the following entries -
-
-> URL_BASE={required root URL}
-> REQ_PORT={required port}
->
-> CURRENCY=(required currency symbol - probably "£")
 
 In the file src/api/index.js add the following lines -
 
