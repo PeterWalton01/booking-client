@@ -60,14 +60,7 @@ In the file src/api/index.js add the following lines -
 >
 > export const CURRENCY = (required currency symbol - probably "£");
 
-Examples:
-
-.env
-
-> URL_BASE="http://localhost"
-> REQ_PORT=4000
->
-> CURRENCY="£"
+Example:
 
 index.js
 
