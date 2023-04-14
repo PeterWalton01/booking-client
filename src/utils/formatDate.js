@@ -7,15 +7,17 @@ import moment from "moment";
  * @return {string}
  */
 export function formatDate(UTCDateString) {
-  return moment(UTCDateString).format("DD MMM yyyy - hh:mm");
+  return moment.utc(UTCDateString).format("DD MMM yyyy - HH:mm");
 }
 
 export function pickerDate(UTCDateString) {
-  return moment(UTCDateString).format("DD/MM/yyyy hh:mm");
+  console.log(UTCDateString);
+  console.log(moment.utc(UTCDateString).format("DD/MM/yyyy HH:mm"));
+  return moment.utc(UTCDateString).format("DD/MM/yyyy HH:mm");
 }
 
 export function timePart(UTCDateString) {
-  return moment(UTCDateString).format("hh:mm");
+  return moment.utc(UTCDateString).format("HH:mm");
 }
 
 // var now  = "04/09/2013 15:00:00";

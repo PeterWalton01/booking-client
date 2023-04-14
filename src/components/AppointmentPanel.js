@@ -27,10 +27,7 @@ const AppointmentPanel = ({ appointment }) => {
   const [extra, setExtra] = useState(false);
   const [adding, setAdding] = useState(false);
   const newDate = pickerDate(appointment.start_datetime);
-  const session_end = timePart(
-    appointment.end_datetime,
-    appointment.start_datetime
-  );
+  const session_end = timePart(appointment.end_datetime);
   const session = (newDate + " - " + session_end).trim();
 
   const handleMore = (e) => {
