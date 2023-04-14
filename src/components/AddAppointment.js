@@ -142,7 +142,7 @@ const AddAppointment = ({ appointment }) => {
               showTimeSelect
               timeFormat="HH:mm"
               timeIntervals={30}
-              dateFormat="dd/MM/yyyy HH:mm"
+              dateFormat="dd/MM/yyyy hh:mm aa"
               minDate={new Date()}
               filterDate={(date) => date.getDay() !== 6 && date.getDay() !== 0}
             />
