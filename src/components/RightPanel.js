@@ -19,8 +19,9 @@ const RightPanel = () => {
   return (
     <div>
       <div className="physioHead">
-        <span className="physioLbl">Appointments for:</span>{" "}
-        {physio.physio_name}
+        <span className="physioLbl">
+          Appointments for: {physio.physio_name}
+        </span>
       </div>
       <div className="appointment-list">
         {/* <div> */}

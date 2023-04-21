@@ -54,7 +54,7 @@ const AppointmentPanel = ({ appointment }) => {
         <div className="grid-item grid-item-lbl">Treatment: </div>
         <div className="grid-item"> {appointment.treatment} </div>
 
-        {extra && <div className="grid-item"></div>}
+        {extra && <div className="grid-item grid-space"></div>}
         {extra && <div className="grid-item grid-item-lbl">Email:</div>}
         {extra && (
           <div className="grid-item grid-client">{appointment.email}</div>
@@ -88,9 +88,10 @@ const AppointmentPanel = ({ appointment }) => {
                 },
                 content: {
                   color: "#B00",
-                  width: "15rem",
+                  width: "9rem",
                   margin: "auto",
-                  height: "6.5rem",
+                  height: "8.5rem",
+                  fontSize: "0.9rem",
                 },
               }}
             >
@@ -99,7 +100,7 @@ const AppointmentPanel = ({ appointment }) => {
               </p>
               <div>
                 <button
-                  className="appointment"
+                  className="sm-appointment"
                   onClick={() => {
                     handleDelete();
                     setShowModal(false);
@@ -111,7 +112,7 @@ const AppointmentPanel = ({ appointment }) => {
                   Confirm
                 </button>
                 <button
-                  className="appointment"
+                  className="sm-appointment"
                   onClick={() => setShowModal(false)}
                 >
                   Cancel

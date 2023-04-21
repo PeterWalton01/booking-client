@@ -37,8 +37,6 @@ The application uses the following technologies:
 
 This is the client that accompanies the server application _Appointment Booking App (REST API)_. (This is also a repository on the GitHub sit). This application will be unresponsive without an instance of this REST API server. Details of how to configure this application to work with an instance of the API server are given below.
 
-Please note that this application is intended to run on an office intranet. No attempt has been made to make the application responsive to device size. Having said that, the application will be usable on a tablet running landscape orientation.
-
 #### Building the application
 
 To begin, this application must be cloned locally from the GitHub. In the project directory the following commands should then be run to build a development version of the application -

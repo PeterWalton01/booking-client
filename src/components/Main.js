@@ -9,6 +9,7 @@ import { getAppointmentsByDateAndPhysio } from "../api/appointment";
 import { setAppointments } from "../slices/appointmentSlice";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "../css/datePicker.css";
 
 import moment from "moment";
 
@@ -99,6 +100,7 @@ const Main = () => {
           <span className="date-label">Date:</span>{" "}
           <DatePicker
             className="date-only-pick"
+            calendarClassName="calendar"
             selected={dateValue}
             onChange={(date) => {
               setDateValue(date);
